@@ -15,11 +15,12 @@ public class Main {
 
         ProductDao productDao = new ProductDaoImpl();
         ProductServiceImpl productServiceImpl = new ProductServiceImpl(productDao);
-        //productServiceImpl.saveOrUpdate(new Product("Product7",(int) 28));
-        //Product product = productServiceImpl.findByID((long) 1);        //System.out.println(product.getId() + " "+ product.getTitle()+ " " + product.getPrice());
-        System.out.println(productServiceImpl.findAll().toString());
+        //productServiceImpl.saveOrUpdate(new Product("Product9",(int) 54));
+        //Product product = productServiceImpl.findByID(1L);        System.out.println(product.getId() + " "+ product.getTitle()+ " " + product.getPrice());
+        //System.out.println(productServiceImpl.findAll().toString());
 
-        // productServiceImpl.deleteByID((long)3);
+       // System.out.println(productServiceImpl.select().toString());
+        //productServiceImpl.deleteByID(4L);
         //System.out.println(productServiceImpl.findAll().toString());
     }
 }
