@@ -3,11 +3,13 @@ package service.impl;
 import dao.CustomerDao;
 import entity.Customer;
 import entity.Product;
+import org.springframework.stereotype.Component;
 import service.CustomerService;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component("customer_service")
 public class CustomerServiceImpl implements CustomerService {
     private CustomerDao customerDao;
 

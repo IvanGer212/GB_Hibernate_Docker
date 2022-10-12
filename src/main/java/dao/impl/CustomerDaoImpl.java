@@ -4,11 +4,12 @@ import dao.CustomerDao;
 import entity.Customer;
 import entity.Product;
 import org.hibernate.Session;
+import org.springframework.stereotype.Component;
 import utils.HibernateSessionFactoryUtil;
 
 import java.util.List;
 import java.util.Optional;
-
+@Component()
 public class CustomerDaoImpl implements CustomerDao {
 
     HibernateSessionFactoryUtil factory;
